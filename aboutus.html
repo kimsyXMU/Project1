@@ -1,0 +1,105 @@
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <title>Infance Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet"type="text/css" href="aboutuscss.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body data-aos="fade-up">
+    <ul class="nav" >
+        <div class="logo" data-aos="fade-right">
+            <a href="mainpage.html">
+                <img src="Header.png" width="124px" alt="InfanceLab">
+            </a>
+        </div>
+            <li><a href="band.html">MyBand</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+    </ul>
+    <div class="atas"> 
+        <h1>MEET OUR TEAM</h1>
+        <h2>The InfanceLab</h2>  
+        <p>We are all different. We were born in different background. We have our own idea towards things but </p>
+        <p>we have a common goal, making child death history. It unites us and the infance lab is formed, and </p>
+        <p>our first ever product, MyBand has been invented. We know that there is a long way to go, but our  </p>
+        <p>story still continue……</p>
+        <div class="btn">
+            <button type="button" onclick="document.getElementById('id01').style.display='block'">Contact us</button>
+        </div>
+    </div>
+    <div class="zhuangbiImage">
+        <img src="xiaoliao.jpg">
+    </div>
+    
+    <section class="we">
+        <h1>Founders</h1>
+        <div class="icons" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-out-back">
+            <div class="box1">
+                <img src="snorlax.png" width="160px">
+                <p>Chia Zheng Jie</p>
+            </div>
+            <div class="box2">
+                <img src="slaking.png" width="160px">
+                <p>Kim Sheng Yong</p>
+            </div>
+            <div class="box3">
+                <img src="psyduck.png" width="120px">
+                <p>Khor Jia Cheng</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Comments</b></label>
+        <input type="text" placeholder="Enter Comments" name="psw" required>
+  
+        <button type="submit">Submit</button>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+  
+        </form>
+      </div>
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event){
+          if(event.target == modal){
+            modal.style.display = "none";
+            
+          }
+        }
+    </script>
+    <script>
+        AOS.init({duration: 1500,
+        easing: 'ease-in-out-back'});
+    </script>
+
+  </body>
+  <footer id="footer">
+    <a href="mainpage.html"><img src="Header.png"></a>
+    <div id="socialMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+  </footer>
+</html>
